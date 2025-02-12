@@ -215,7 +215,7 @@ Note:
 
 This milestone will give you a detailed understanding of performing update operations in MongoDB.
 
-**Milestone #14**
+Milestone #14
 
 In this milestone, we will add a Delete button to the product card and create a backend endpoint to remove a product from MongoDB using its ID.
 
@@ -229,3 +229,33 @@ Steps for Milestone 14 📝
 	2.	Frontend:
 	•	Add a Delete button to each product card.
 	•	On clicking Delete, send the product ID to the server to remove it from the database.
+
+Milestone 15: Navbar Component 🚀
+
+Learning Goals 🎯
+
+By the end of this milestone, you will:
+	•	Learn how to create a Navbar component.
+	•	Understand how to reuse a component across multiple pages.
+
+Steps 📝
+	1.	Create a Navbar component with links to:
+	•	Home
+	•	My Products
+	•	Add Product
+	•	Cart
+	2.	Make it responsive for all screen sizes.
+	3.	Add the Navbar to all pages for smooth navigation.
+
+Milestone 16: Product Info Page 🚀
+
+Learning Goals 🎯
+
+By the end of this milestone, you will:
+	•	Learn how to create a new page to display product details.
+	•	Add a quantity selector and an “Add to Cart” button.
+
+Steps 📝
+	1.	Create a Product Info Page to display all product details.
+	2.	Add a quantity selection option for users.
+	3.	Implement an “Add to Cart” button for easy purchase.
