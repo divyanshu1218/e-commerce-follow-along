@@ -259,3 +259,30 @@ Steps 📝
 	1.	Create a Product Info Page to display all product details.
 	2.	Add a quantity selection option for users.
 	3.	Implement an “Add to Cart” button for easy purchase.
+
+# Cart Functionality - Milestone 17 **
+📌 Overview
+This milestone focuses on implementing a cart feature by creating an endpoint that allows users to add products to their cart and store them in the database.
+
+🎯 Learning Objectives
+By completing this milestone, we:
+✔ Edited the user schema to store cart products.
+✔ Created a Cart schema to store products separately.
+✔ Developed a backend API endpoint to add products to the cart.
+✔ Successfully stored cart data in the database (MongoDB Atlas).
+
+# Fetch Cart Items - Milestone 18
+📌 Overview
+In this milestone, we will implement a backend endpoint to fetch all products inside a user's cart. This will allow the cart page to display the items stored in the database.
+
+🎯 Learning Goals
+By the end of this milestone, you will:
+✅ Create an endpoint to receive requests from the cart page.
+✅ Implement backend logic to fetch all products inside the cart using the user's email.
+
+🏗️ Steps for Implementation
+1️⃣ Create an Endpoint for the Cart Page
+Set up a GET request in your backend to retrieve cart items for a specific user.
+2️⃣ Fetch Products from the Database
+Query the database using the user’s email to retrieve all products in their cart.
+Return the fetched products as a JSON response.
