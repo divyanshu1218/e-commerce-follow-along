@@ -286,3 +286,42 @@ Set up a GET request in your backend to retrieve cart items for a specific user.
 2️⃣ Fetch Products from the Database
 Query the database using the user’s email to retrieve all products in their cart.
 Return the fetched products as a JSON response.
+
+
+
+Milestone 19 - Cart Functionality 🛒
+
+Overview
+
+In this milestone, you’ll build a Cart UI and implement an endpoint to increase/decrease product quantity in the cart.
+
+Learning Goals 🎯
+	•	Display products in the cart (using the endpoint from Milestone 18).
+	•	Add + and - buttons to modify product quantity.
+	•	Create backend endpoints to update quantity.
+
+Steps 📝
+	1.	Frontend: Create a cart page and display products.
+	2.	UI Controls: Add + and - buttons for quantity updates.
+	3.	Backend: Implement an endpoint to modify product quantity.
+
+
+
+Milestone 20 - Profile Page 🏠
+
+Overview
+
+In this milestone, you’ll build a Profile Page UI and implement an endpoint to fetch and display user data.
+
+Learning Goals 🎯
+	•	Create a backend endpoint to send user data via email.
+	•	Build a frontend profile page to display user details.
+	•	Show profile photo, name, email, and addresses.
+
+Steps 📝
+	1.	Backend: Create an endpoint to send user data.
+	2.	Frontend: Develop a profile page layout.
+	3.	Display User Info:
+	•	Section 1: Profile photo, name, and email.
+	•	Section 2: Address list with an “Add Address” button.
+	•	If no address exists, show “No address found”.
