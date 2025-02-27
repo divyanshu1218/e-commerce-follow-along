@@ -8,11 +8,9 @@ const connectDatabase = () => {
         // Connect to the database using the URL provided in the environment variables
         .connect(process.env.DB_URL) // No need to specify useNewUrlParser or useUnifiedTopology (handled automatically by mongoose)
         .then((data) => {
-            // Log a success message when the connection is successfully established
             console.log(`MongoDB connected with server: ${data.connection.host}`);
         })
         .catch((err) => {
-            // Log an error message if the connection fails
             console.error(`Database connection failed: ${err.message}`);
             
             // Exit the Node.js process to prevent the application from running without a valid database connection

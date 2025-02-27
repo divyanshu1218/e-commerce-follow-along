@@ -325,3 +325,34 @@ Steps 📝
 	•	Section 1: Profile photo, name, and email.
 	•	Section 2: Address list with an “Add Address” button.
 	•	If no address exists, show “No address found”.
+
+
+
+# Milestone 21: Address Form 🏡
+
+Learning Goals 🎯
+
+By the end of this milestone, you will:
+	•	Create a frontend form for address input.
+	•	Collect country, city, address1, address2, zip code, and address type.
+	•	Manage form state to store the input address.
+	•	Navigate to this form when clicking “Add Address” in the profile.
+
+Steps 📝
+	1.	Build the address form page.
+	2.	Implement state management for the form inputs.
+	3.	Enable navigation from the profile page to the form.
+
+
+
+
+
+### Milestone 22: Save Address in Database  
+
+In this milestone, we will create a backend endpoint to store user addresses in the database.  
+
+#### Key Tasks:  
+- Create an endpoint to receive address data from the frontend form.  
+- Add the received address to the address array inside the user collection.  
+
+This milestone focuses on implementing backend logic to store user addresses efficiently.
