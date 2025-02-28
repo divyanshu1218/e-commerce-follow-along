@@ -33,11 +33,11 @@ const productSchema = new mongoose.Schema(
     images: {
       type: [String], // Array of image URLs (base64 or hosted links)
       required: [true, "Please upload product images"],
-    }
-    // createdAt: {
-    //   type: Date,
-    //   default: Date.now, // Automatically set the creation date
-    // },
+    },
+    createdAt: {
+      type: Date,
+      default: Date.now, // Automatically set the creation date
+    },
   },
   {
     timestamps: true,
