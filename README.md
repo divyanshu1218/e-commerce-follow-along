@@ -260,32 +260,33 @@ Steps 📝
 	2.	Add a quantity selection option for users.
 	3.	Implement an “Add to Cart” button for easy purchase.
 
-# Cart Functionality - Milestone 17 **
-📌 Overview
-This milestone focuses on implementing a cart feature by creating an endpoint that allows users to add products to their cart and store them in the database.
+Milestone 17 - Add to Cart 🛒
 
-🎯 Learning Objectives
-By completing this milestone, we:
-✔ Edited the user schema to store cart products.
-✔ Created a Cart schema to store products separately.
-✔ Developed a backend API endpoint to add products to the cart.
-✔ Successfully stored cart data in the database (MongoDB Atlas).
+Overview
 
-# Fetch Cart Items - Milestone 18
-📌 Overview
-In this milestone, we will implement a backend endpoint to fetch all products inside a user's cart. This will allow the cart page to display the items stored in the database.
+In this milestone, you’ll implement a backend endpoint to add products to a cart and store them in the database.
 
-🎯 Learning Goals
-By the end of this milestone, you will:
-✅ Create an endpoint to receive requests from the cart page.
-✅ Implement backend logic to fetch all products inside the cart using the user's email.
+Learning Goals 🎯
+	•	Update the user schema to store cart products.
+	•	Create an API endpoint to add product details to the cart.
 
-🏗️ Steps for Implementation
-1️⃣ Create an Endpoint for the Cart Page
-Set up a GET request in your backend to retrieve cart items for a specific user.
-2️⃣ Fetch Products from the Database
-Query the database using the user’s email to retrieve all products in their cart.
-Return the fetched products as a JSON response.
+Steps 📝
+	1.	Define the cart schema to store products.
+	2.	Implement an endpoint to receive and store product details in the cart.
+
+Milestone 18 - Fetch Cart Products 🛒
+
+Overview
+
+In this milestone, you’ll implement a backend endpoint to fetch all products in a user’s cart for display on the cart page.
+
+Learning Goals 🎯
+	•	Create an endpoint to handle requests from the cart page.
+	•	Fetch all cart products using the user’s email.
+
+Steps 📝
+	1.	Define a backend endpoint for the cart page.
+	2.	Implement logic to retrieve products from the cart based on the user’s email.
 
 
 
@@ -326,9 +327,7 @@ Steps 📝
 	•	Section 2: Address list with an “Add Address” button.
 	•	If no address exists, show “No address found”.
 
-
-
-# Milestone 21: Address Form 🏡
+Milestone 21: Address Form 🏡
 
 Learning Goals 🎯
 
@@ -343,16 +342,44 @@ Steps 📝
 	2.	Implement state management for the form inputs.
 	3.	Enable navigation from the profile page to the form.
 
+Milestone 22 - Store User Address 🏠
 
+Learning Goals 🎯
 
+By the end of this milestone, you will:
+✅ Create a backend endpoint to store user addresses in the database.
 
+Steps 📝
+	1.	Create an endpoint to receive the address from the frontend form.
+	2.	Append the address to the address array inside the user collection.
+	3.	Ensure proper request validation and error handling.
 
-### Milestone 22: Save Address in Database  
+# Milestone 23 🚀  
 
-In this milestone, we will create a backend endpoint to store user addresses in the database.  
+## Overview  
+In this milestone, we will:  
+- Add a *"Place Order"* button in the cart.  
+- Create a *Select Address* page for choosing a delivery address.  
+- Write a *Mongoose schema* for storing order details.  
 
-#### Key Tasks:  
-- Create an endpoint to receive address data from the frontend form.  
-- Add the received address to the address array inside the user collection.  
+## Steps  
+1. Add a *Place Order* button in the cart that navigates to the Select Address page.  
+2. Create a *Select Address* page displaying all saved addresses with a selection option.  
+3. Implement a *backend endpoint* to fetch user addresses.  
 
-This milestone focuses on implementing backend logic to store user addresses efficiently.
+### Note  
+This milestone helps in understanding how to implement the *place order* functionality.  
+
+# Milestone 24 🚀  
+
+## Overview  
+In this milestone, we will create an *Order Confirmation* page to display order details.  
+
+## Steps  
+1. Show all *products* being ordered.  
+2. Display the *selected delivery address*.  
+3. Show the *total cart value*.  
+4. Add a *"Place Order"* button at the bottom.  
+
+### Note  
+This milestone helps in understanding how to implement the *place order* functionality.
