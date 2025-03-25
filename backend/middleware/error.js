@@ -1,42 +1,35 @@
-// Import the ErrorHandler class
-// This custom class is used to create and handle application-specific errors.
 const ErrorHandler = require("../utils/ErrorHandler");
 
-// Export the error-handling middleware
-// This function acts as middleware to handle errors in the application and provide appropriate responses.
 module.exports = (err, req, res, next) => {
-    // Set default values for the error's status code and message
-    err.statusCode = err.statusCode || 500; // Default to 500 (Internal Server Error) if no status code is provided
-    err.message = err.message || "Internal server Error"; // Default message for errors
- 
-    // Handle invalid MongoDB ObjectId errors
+    err.statusCode = err.statusCode || 500;
+    err.message = err.message || "Internal server Error";
+
+    // wrong mongodb id error
     if (err.name === "CastError") {
-        const message = `Resources not found with this id. Invalid ${err.path}`;
-        err = new ErrorHandler(message, 400); // Create a new error instance with status code 400 (Bad Request)
+        const message = `Resources not found with this id.. Invalid ${err.path}`;
+        err = new ErrorHandler(message, 400);
     }
 
-    // Handle duplicate key errors (e.g., unique constraint violations in MongoDB)
+    // Duplicate key error
     if (err.code === 11000) {
-        const message = `Duplicate key ${Object.keys(err.keyValue)} Entered`; // Inform the user about the duplicate key
-        err = new ErrorHandler(message, 400); // Set status code to 400 (Bad Request)
+        const message = `Duplicate key ${Object.keys(err.keyValue)} Entered`;
+        err = new ErrorHandler(message, 400);
     }
 
-    // Handle invalid JWT (JSON Web Token) errors
+    // wrong jwt error
     if (err.name === "JsonWebTokenError") {
-        const message = `Your URL is invalid. Please try again later.`; // Inform the user the token is invalid
-        err = new ErrorHandler(message, 400); // Set status code to 400 (Bad Request)
+        const message = `Your url is invalid please try again later`;
+        err = new ErrorHandler(message, 400);
     }
 
-    // Handle expired JWT errors
+    // jwt expired
     if (err.name === "TokenExpiredError") {
-        const message = `Your URL is expired. Please try again later.`; // Inform the user the token has expired
-        err = new ErrorHandler(message, 400); // Set status code to 400 (Bad Request)
+        const message = `Your Url is expired please try again later!`;
+        err = new ErrorHandler(message, 400);
     }
 
-    // Send the error response
-    // Respond with the error status code and message, indicating failure
     res.status(err.statusCode).json({
-        success: false, // Indicate the operation was unsuccessful
-        message: err.message, // Include the error message
+        success: false,
+        message: err.message,
     });
 };
