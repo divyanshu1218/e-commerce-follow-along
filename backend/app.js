@@ -1,4 +1,3 @@
-
 const express = require("express");
 const app = express(); 
 const ErrorHandler = require("./middleware/error");
@@ -8,12 +7,10 @@ const cors = require("cors");
 const product= require('./controller/product')
 const path=require('path')
 const orders = require('./controller/orders');
-
 const corsOptions = {
     origin: 'http://localhost:5173', // Allow only your frontend origin
     credentials: true, // Allow cookies and credentials
   };
-
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors(corsOptions));
